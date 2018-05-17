@@ -34,18 +34,20 @@ if __name__ == '__main__':
 		
 	try:
 		key_to_press = sys.argv[3]
+		key_name = key_to_press.upper()
 	except:
 		key_to_press = Key.up
-	print 'Key to Press: {}'.format(key_to_press.upper())
+		key_name = key_to_press.name.upper()
+	
+	print 'Key to Press: {}'.format(key_name)
+	
 	start_time = datetime.datetime.now()
 	while True:
 		idle_seconds = get_idle_duration()
 		if idle_seconds > IDLE_TIMIT:
 			keyboard.press(key_to_press)
-			print 'Pressed {} on {} idle seconds'.format(key_to_press.upper(), IDLE_TIMIT)
+			print 'Pressed {} on {} idle seconds'.format(key_name, IDLE_TIMIT)
 		time.sleep(interval)
 		print 'Time: {} \tIdle: {} secs'.format(datetime.datetime.now() - start_time, idle_seconds)
 		
-		
-		
-		
+

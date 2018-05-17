@@ -11,7 +11,7 @@ Requirements:
 
 How to Run:
 ----------
-#### Run with default options
+#### Run with default options:
 ```
 python keypress_on_idle.py
 ```
@@ -19,12 +19,12 @@ Will check for idle time in every `30` seconds and press 'up' key if the idle ti
 
 #### or 
 
-#### Run with custom options
+#### Run with custom options:
 ```
 python keypress_on_idle.py 30 5 down
 ```
 Will check for idle time in every `5` seconds and press `down` key if the idle time exceeds `30` seconds.
 
-#### Key options
+#### Key options:
 `alt`, `alt_l`, `alt_r`, `backspace`, `caps_lock`, `cmd`, `cmd_r`, `ctrl`, `ctrl_l`, `ctrl_r`, `delete`, `down`, `end`, `enter`, `esc`, `f1`, `f10`, `f11`, `f12`, `f13`, `f14`, `f15`, `f16`, `f17`, `f18`, `f19`, `f2`, `f20`, `f3`, `f4`, `f5`, `f6`, `f7`, `f8`, `f9`, `home`, `insert`, `left`, `menu`, `num_lock`, `page_down`, `page_up`, `pause`, `print_screen`, `right`, `scroll_lock`, `shift`, `shift_r`, `space`, `tab`, `up`, `A`, `B`, .... 
 and all other keys

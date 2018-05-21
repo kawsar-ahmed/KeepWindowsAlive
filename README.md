@@ -11,6 +11,9 @@ Requirements:
 
 How to Run:
 ----------
+```
+python keypress_on_idle.py <idle_limit> <check_interval> <key_to_press>
+```
 #### Run with default options:
 ```
 python keypress_on_idle.py
